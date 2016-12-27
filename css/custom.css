@@ -1,0 +1,55 @@
+.example-column{font-family:monospace;background:#fff;letter-spacing:0;border:1px solid #dfe5e8;padding:7.5px;border-radius:5px;text-align:center;font-weight:300;font-size:.8125rem;font-size:13px;margin:7.5px 0}pre{overflow:auto}.example-code,code{background:#f1f1f1;border:1px solid #e1e1e1}.example-code{font-family:monospace,monospace;font-size:.8125rem;font-size:13px;white-space:pre-wrap;overflow:auto;margin:7.5px 0;border-radius:4px}.example-code code{white-space:pre-wrap;padding:20px;margin:0;background:0 0;border:none;word-wrap:break-word;display:inline-block}
+
+.btn-ashton {
+    background-color: #73C6B6;
+    color: #fff;
+}
+
+.btn-ashton:hover {
+    filter:brightness(110%);
+    background-color: #73C6B6;
+    color: #fff;
+}
+
+.image-example {
+    max-width: 200px;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 15px;
+}
+
+.table-example {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -1rem;
+    border: solid #fff;
+    border-width: .2rem 0 0;
+}
+
+header img {
+    height: 50%;
+    width: 50%;
+}
+
+@media only screen and (max-width: 48em) {
+    #intro h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 1em 0;
+    }
+    #intro h4 {
+        font-size: 0.9em;
+        line-height: 1.7;
+    }
+    .centerBox {
+        width: auto;
+        margin: 40px auto;
+        background: white;
+        padding: 20px;
+        box-sizing: border-box;
+        border: solid 1px #ccc;
+    }
+}
+

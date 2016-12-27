@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Ashton</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="author" content="Gabe Amaya">
+    <meta name="description" content="Ashton is a front-end web develpment project framework that scales across all devices, Ashton's boilerplate markup is fast, simple and easy to customize. With less than 1800 lines of code, Ashton is easy to maintain and expand on, making it the perfect framework to start a responsive project with.">
+    <!-- Ashton -->
+    <link href="css/ashton.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- GitHub Button script -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/faviconit/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="img/faviconit/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="img/faviconit/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="img/faviconit/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/faviconit/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="img/faviconit/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/faviconit/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/faviconit/favicon-16.png">
+	<link rel="apple-touch-icon" href="img/faviconit/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/faviconit/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/faviconit/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/faviconit/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/faviconit/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/faviconit/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/faviconit/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/faviconit/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/faviconit/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="img/faviconit/favicon-144.png">
+	<meta name="msapplication-config" content="img/faviconit/browserconfig.xml">
+  
+</head>
+<body>
+   
+   <!-- NAVBAR -->
+    <header class="sticky">
+        <div class="container">
+            <a href="#intro" class="header"><img src="img/Ashtonlogo.png" alt="Ashton Logo"></a>
+           <div class="navbar">
+              <a href="#" class="navbar-open">
+              </a>
+               <ul class="nav-expand">
+                   <li><a href="#intro">Intro</a></li>
+                   <li class="dropdown"><a href="#">Code</a>
+                       <ul class="dropdown-content">
+                         <li><a href="#grid">Grid</a></li>
+                         <li><a href="#typography">Typography</a></li>
+                         <li><a href="#navigation">Navigation</a></li>
+                         <li><a href="#buttons">Buttons</a></li>
+                         <li><a href="#images">Images</a></li>
+                         <li><a href="#forms">Forms</a></li>
+                         <li><a href="#tables">Tables</a></li>
+                         <li><a href="#utilities">Utilities</a></li>  
+                       </ul>
+                   </li>
+                   <li><a href="#templates">Templates</a></li>
+               </ul>
+           </div>
+        </div>
+    </header>
+    
+    <section id="intro"> <!-- Intro Section -->
+       <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 center-md center-sm center-xs">
+                    <h2 class="title text-center">Front-end Web Development made easy.</h2>
+                    <h4 class="text-center">Ashton is a front-end web develpment project framework that scales across all devices, Ashton's boilerplate markup is fast, simple and easy to customize. With less than 1800 lines of code, Ashton is easy to maintain and expand on, making it the perfect framework to start a responsive project with.</h4>
+                    <p>Follow development on Github</p>
+                    <!-- GitHub Follow Button -->
+                    <a class="github-button" href="https://github.com/CodingGabe" data-style="mega" data-count-href="/CodingGabe/followers" data-count-api="/users/CodingGabe#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @CodingGabe on GitHub">Follow @CodingGabe</a>
+                    <!-- GitHub Star Button -->
+                    <a class="github-button" href="https://github.com/CodingGabe/gabestrap" data-icon="octicon-star" data-style="mega" data-count-href="/CodingGabe/gabestrap/stargazers" data-count-api="/repos/CodingGabe/gabestrap#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star CodingGabe/gabestrap on GitHub">Star</a>
+                    <h3 class="text-center">Get started with Ashton</h3>
+                    <button class="btn btn-ashton">Download Ashton</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--- GRID --->
+    <section id="grid"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h2>Responsive Grid</h2>
+                    <p>Using FlexBox, we use container, rows, and columns.</p>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 col-sm-10 col-xs-10 center-md center-sm center-xs">
+                   <div class="example-column">.column</div>
+               </div>
+            </div>
+            <div class="row col-xs">
+                <p class="lead">Ashton is based off of Flexbox grid system with simple to use columns for creating fast responsive webpages and is based on the 12 column system. Example here:</p>
+                <pre class="example-code">
+                    <code>&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="example-column"&gt;
+            .column
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+            <div class="row col-xs">
+                <p class="lead">Using the grid system can create things like Three equal-width columns. Below is an example of how these columns can be responsive on small, medium and large devices.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-4">
+                   <div class="example-column">One of three</div>
+                </div>
+                <div class="col-sm-4 col-xs-4">
+                   <div class="example-column">One of three</div>
+                </div>
+                <div class="col-sm-4 col-xs-4">
+                   <div class="example-column">One of three</div>
+                </div>
+            </div>
+            <div class="row">
+                <pre class="example-code">
+                    <code>&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-sm-4"&gt;
+            One of three
+        &lt;/div&gt;
+        &lt;div class="col-sm-4"&gt;
+            One of three
+        &lt;/div&gt;
+        &lt;div class="col-sm-4"&gt;
+            One of three
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+                </pre>
+            </div>
+            
+            <div class="row col-xs">
+                <p class="lead">Ashton uses 4 sizes for different devices. <code>xs-#</code>,<code>sm-#</code>,<code>md-#</code>,<code>lg-#</code>. Adjust your browswer to see each of the divs collapse.</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="example-column">
+                        .col-xs-8
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="example-column">
+                        .col-xs-4
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="example-column">
+                       .col-sm-8 
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="example-column">
+                       .col-sm-4 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="example-column">
+                        .col-md-6
+                    </div>    
+                </div>
+                <div class="col-md-6">
+                    <div class="example-column">
+                        .col-md-6
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="example-column">.col-lg-2</div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="example-column">.col-lg-10</div>
+                </div>
+            </div>
+            
+            <div class="row col-xs">
+                <p class="lead">Multiple sized columns can be stacked by adding multiple classes:</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="example-column">.col-lg-3 .col-md-3 .col-sm-6 .col-xs-12</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="example-column">.col-lg-3 .col-md-3 .col-sm-6 .col-xs-12</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="example-column">.col-lg-3 .col-md-3 .col-sm-6 .col-xs-12</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="example-column">.col-lg-3 .col-md-3 .col-sm-6 .col-xs-12</div>
+                </div>
+            </div>
+            
+            <div class="col-md-12">
+                <pre class="example-code">
+                    <code>&lt;div class="row"&gt;
+    &lt;div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"&gt;
+        &lt;div&gt;.col-lg-3 .col-md-3 .col-sm-6 .col-xs-12&lt;/div&gt;
+    &lt;/div&gt; 
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+            
+            <div class="row col-xs">
+                <p class="lead">Div's can easily be centered by adding <code>center-#</code> to any class</p>
+            </div>
+            <div class="col-md-12 center-md">
+                <div class="example-column">
+                    .center-md
+                </div>
+            </div>
+            <div class="col-md-12">
+                <pre class="example-code">
+                    <code>&lt;div class="row"&gt;
+    &lt;div class="col-md-12 center-md"&gt;
+        &lt;div&gt;.center-md&lt;/div&gt;
+    &lt;/div&gt; 
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- TYPOGRAPHY -->
+    <section id="typography">
+        <div class="container">
+           <div class="row">
+               <div class="col-md-6 col-sm=6 col-xs-6">
+                   <h2>Typography</h2>
+               </div>
+           </div>
+            <div class="row col-xs">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                           <td>
+                               <h1>H1 Heading</h1>
+                           </td>
+                           <td>
+                               <small class="text-muted"> 2.5rem (40px)</small>
+                           </td> 
+                        </tr>
+                        <tr>
+                           <td>
+                               <h2>H2 Heading</h2>
+                           </td>
+                           <td>
+                               <small class="text-muted"> 2rem (32px)</small>
+                           </td> 
+                        </tr>
+                        <tr>
+                           <td>
+                               <h3>H3 Heading</h3>
+                           </td>
+                           <td>
+                               <small class="text-muted"> 1.75rem (28px)</small>
+                           </td> 
+                        </tr>
+                        <tr>
+                           <td>
+                               <h4>H4 Heading</h4>
+                           </td>
+                           <td>
+                               <small class="text-muted"> 1.5rem (24px)</small>
+                           </td> 
+                        </tr>
+                        <tr>
+                           <td>
+                               <h5>H5 Heading</h5>
+                           </td>
+                           <td>
+                               <small class="text-muted"> 1.25rem (20px)</small>
+                           </td> 
+                        </tr>
+                        <tr>
+                           <td>
+                               <h6>H6 Heading</h6>
+                           </td>
+                           <td>
+                               <small class="text-muted"> 1rem (16px)</small>
+                           </td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <section id="navigation">
+        <div class="container">
+            <div class="row col-xs">
+                <div class="col-md-6">
+                    <h2>Header &amp; Navbar</h2>
+                </div>
+            </div>
+            <div class="row col-xs">
+                <p>Coming Soon, working on building a neat, minimal coded, responsive navbar.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="buttons">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h2>Buttons</h2>
+                </div>
+            </div>
+            <div class="row col-xs">
+                <p>Simply give the <code> a </code> tag or anchor tag the <code> .btn </code> class to make it a clickable button.</p>
+                <p>You can add a sub class to change the color</p>
+            </div>
+            <div class="row col-xs">
+                <a href="#" class="btn btn-prime">Button</a>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <pre class="example-code">
+                    <code>&lt;a class="btn btn-prime"&gt;Button&lt;/div&gt;
+                    </code>
+                </pre>
+                </div>
+            </div>
+            <div class="row col-xs">
+                <p class="lead">Ashton includes six predefined classes that can be used for your needs. Examples:</p>
+            </div>
+            <div class="row col-xs">
+               <p>
+                   <button class="btn btn-default">Default</button>
+                   <button class="btn btn-prime">Prime</button>
+                   <button class="btn btn-success">Success</button>
+                   <button class="btn btn-info">Info</button>
+                   <button class="btn btn-warning">Warning</button>
+                   <button class="btn btn-danger">Danger</button>
+               </p>
+            </div>
+            <div class="row col-xs">
+                <p class="lead">Ashton also includes inverse buttons. Examples:</p>
+            </div>
+            <div class="row col-xs">
+               <p>
+                   <button class="btn btn-outline-default">Default</button>
+                   <button class="btn btn-outline-prime">Prime</button>
+                   <button class="btn btn-outline-success">Success</button>
+                   <button class="btn btn-outline-info">Info</button>
+                   <button class="btn btn-outline-warning">Warning</button>
+                   <button class="btn btn-outline-danger">Danger</button>
+               </p>
+            </div>
+            <div class="row col-xs">
+               <p>In addition, you can also <code>.center </code> buttons using the <code>.center-xx </code> class.</p>
+                <div class="col-md-12 col-sm-12 center-md center-sm">
+                    <button class="btn btn-ashton">Center Button</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="images">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h2>Images</h2>
+                </div>
+            </div>
+            <div class="row col-xs">
+                <p class="lead">Similar to Bootstraps images, Ashton, uses the <code>.img-responsive </code> class to make images responsive across all devices.</p>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 center-md center-sm center-xs">
+                    <p>Use the <code>.img-thumbnail </code> for an added border to the image for thumbnails.</p>
+                    <img src="http://placehold.it/200x200/73C6B6/fff" alt="placeholder image" class="img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 center-md center-sm center-xs">
+                    <p>Adding the <code>.img-circle </code> class makes an image a circle.</p>
+                    <img src="http://placehold.it/200x200/73C6B6/fff" alt="placeholder image" class="img-circle">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 center-md center-sm center-xs">
+                    <p>Adding the <code>.img-rounded </code> gives the image rounded edges.</p>
+                    <img src="http://placehold.it/200x200/73C6B6/fff" alt="placeholder image" class="img-rounded">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!--- FORMS --->
+    <section id="forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h2>Forms</h2>
+                </div>
+            </div>
+            <form action="">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <label>Name</label>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <label>Password</label>
+                    <input type="text" placeholder="password">
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <label>Email Address</label>
+                    <input type="text" placeholder="example@email.com">
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <label>Message</label>
+                    <textarea name="message"rows="5"></textarea>
+                </div>
+                <div class="row col-xs">
+                    <input type="submit" class="btn btn-ashton" value="Submit">
+                </div>
+            </form>
+            <div class="row col-xs">
+                <p>Forms are mostly unchanged with minor changes in the typography for aesthetics</p>
+            </div>
+            <div class="row">
+                <pre class="example-code">
+                    <code>&lt;form&gt;
+    &lt;div class="col-md-12"&gt;
+        &lt;label&gt;Name&lt;/label&gt;
+        &lt;input type="text" placeholder="name"&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-12"&gt;
+        &lt;label&gt;Password&lt;/label&gt;
+        &lt;input type="text" placeholder="password"&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-12"&gt;
+        &lt;label&gt;Email Address&lt;/label&gt;
+        &lt;input type="text" placeholder="example@email.com"&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-12"&gt;
+        &lt;label&gt;Message&lt;/label&gt;
+        &lt;textarea name="message" rows="5"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+        &lt;div&gt; 
+            &lt;input type="submit" class="btn btn-default" value="Submit"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt; 
+&lt;/form&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </section>
+    
+    <!--- TABLES --->
+    <section id="tables">
+        <div class="container">
+           <div class="row">
+               <div class="col-md-6 col-sm-6 col-xs-6">
+                   <h2>Tables</h2>
+               </div>
+           </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Pokemon</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>Bulbasaur</td>
+                        <td>Grass</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">004</th>
+                        <td>Charmander</td>
+                        <td>Fire</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">007</th>
+                        <td>Squirtle</td>
+                        <td>Water</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="row col-xs">
+                <p class="lead">Used Bootstrap 4's model for tables to create a beautiful table which includes an inverse option for a darker finish.</p>
+                <p>Just use the <code>.table</code> class.</p>
+            </div>
+            <div class="row">
+                <pre class="example-code">
+                    &lt;table class="table"&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;Pokemon&lt;/th&gt;
+                                &lt;th&gt;Type&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope="row"&gt;001&lt;/th&gt;
+                                &lt;td&gt;Bulbasaur&lt;/td&gt;
+                                &lt;td&gt;Grass&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope="row"&gt;004&lt;/th&gt;
+                                &lt;td&gt;Charmander&lt;/td&gt;
+                                &lt;td&gt;Fire&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope="row"&gt;007&lt;/th&gt;
+                                &lt;td>Squirtle&lt;/td&gt;
+                                &lt;td>Water&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                </pre>
+            </div>
+            
+            <br>
+            
+            <div class="row col-xs">
+                <p>Just use the <code>.table-inverse</code> class to change the color to a dark theme.</p>
+            </div>
+            
+            <br>
+            
+                <table class=" table table-inverse">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Pokemon</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">001</th>
+                            <td>Bulbasaur</td>
+                            <td>Grass</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">004</th>
+                            <td>Charmander</td>
+                            <td>Fire</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">007</th>
+                            <td>Squirtle</td>
+                            <td>Water</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </section>
+    
+    <!--- UTILITIES --->
+    <section id="utilities">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h2>Utility Classes</h2>
+                </div>
+            </div>
+            <div class="row col-xs">
+                <p class="lead">Using these Utility classes as a shortcut for your project.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 center-sm col-xs-6 center-xs">
+                    <p><code>.text-lowercase</code></p>
+                </div>
+                <div class="col-sm-6 center-sm col-xs-6 center-xs">
+                    <p>text-lowercase</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 center-sm col-xs-6 center-xs">
+                    <p><code>.text-uppercase</code></p>
+                </div>
+                <div class="col-sm-6 center-sm col-xs-6 center-xs">
+                    <p>TEXT-UPPERCASE</p>
+                </div>
+                <div class="col-sm-12 center-sm col-xs-12 center-xs">
+                    <p class="text-center">.text-center</p>
+                </div>
+                <div class="col-sm-12 center-sm col-xs-12 center-xs">
+                    <p class="text-left">.text-left</p>
+                </div>
+                <div class="col-sm-12 center-sm col-xs-12 center-xs">
+                    <p class="text-right">.text-right</p>
+                </div>
+                <div class="col-sm-12 center-sm col-xs-12 center-xs">
+                    <p class="blockquote">.block-quote</p>
+                </div>
+                <div class="col-sm-12 center-sm col-xs-12 center-xs">
+                    <div class="centerBox">
+                       <code>.centerBox</code>
+                        <h3>A neat box to display things.</h3>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>  
+    
+</body>
